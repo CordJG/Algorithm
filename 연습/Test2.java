@@ -6,6 +6,7 @@ public class Test2 {
 
 
 
+
             cozStudents.averageAge = 29;
             System.out.println("코드스테이츠 이번 기수 수강생들의 평균 나이는 " + cozStudents.averageAge + "살입니다.");
 
@@ -24,10 +25,10 @@ public class Test2 {
         int averageAge;
         int b;
 
-        static void wow(int b){
-            System.out.printf("나의 나이는 %d 이다.",b);
+        public void wow(double b){
+            System.out.printf("나의 나이는 %s 이다.",b);
         }
-             CozStudents(int x, int y, int b){
+                 CozStudents(int x, int y, int b){
                 this.b=b;
                 System.out.printf("이게뭐람 %d %d %d\n",x,y,b);
 
