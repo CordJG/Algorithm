@@ -13,14 +13,15 @@ public class project {
         pl.hp=20; pl.atk=5; pl.def=2;
         mon.hp=10; mon.atk=3; mon.def=0;
         mon.realdmg=mon.atk-pl.def;
-        mon.lefthp=pl.atk-mon.def;
+        mon.lefthp=mon.hp-pl.realdmg;
         pl.realdmg=pl.atk-mon.def;
-        pl.lefthp=mon.atk-pl.def;
+        pl.lefthp=pl.hp-mon.realdmg;
 
         while (mon.hp <= 0 || pl.hp <= 0) {
             if (mon.lefthp < mon.hp) {
                 pl.attack(5, 0);
                 mon.hp = mon.lefthp;
+                mon.lefthp=mon.hp-pl.realdmg;
             }
             if (pl.lefthp < pl.hp){
 
