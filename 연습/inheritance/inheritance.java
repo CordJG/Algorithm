@@ -1,9 +1,9 @@
-package 연습;
+package 연습.inheritance;
 
 public class inheritance {
     public static void main(String[] args) {
         Bike bike = new Bike(); // 각각의 타입으로 선언 + 각각의 타입으로 객체 생성
-        Car3 car = new Car3();
+        Car car = new Car();
         MotorBike motorBike = new MotorBike();
 
         bike.run();
@@ -11,14 +11,14 @@ public class inheritance {
         motorBike.run();
 
         Vehicle bike2 = new Bike(); // 상위 클래스 타입으로 선언 + 각각 타입으로 객체 생성
-        Vehicle car2 = new Car3();
+        Vehicle car2 = new Car();
         Vehicle motorBike2 = new MotorBike();
 
         bike2.run();
         car2.run();
         motorBike2.run();
 
-        Vehicle[] vehicles = new Vehicle[] { new Bike(), new Car3(), new MotorBike()};
+        Vehicle[] vehicles = new Vehicle[] { new Bike(), new Car(), new MotorBike()};
         for (Vehicle i : vehicles) {
             i.run();
         }
@@ -37,7 +37,7 @@ class Bike extends Vehicle {
     }
 }
 
-class Car3 extends Vehicle {
+class Car extends Vehicle {
     void run() {
         System.out.println("Car is running");
     }
