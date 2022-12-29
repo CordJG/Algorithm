@@ -1,6 +1,6 @@
 package 연습;
 
-public class Modifier {
+class Modifier {
     public static void main(String[] args) {
         Parent p = new Parent();
 
@@ -13,7 +13,7 @@ public class Modifier {
     }
 }
 
-class Parent{
+public class Parent{
     private int a = 2;
     int b = 3;
     protected int c = 4;
