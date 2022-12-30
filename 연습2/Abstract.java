@@ -18,7 +18,7 @@ class Dog extends Abstract{
 
 class Cat extends Abstract{
     public Cat() {
-        this.kind = "표유류";
+        this.kind = "포유류";
     }
 
     public void sound() {
