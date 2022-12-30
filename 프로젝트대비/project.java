@@ -73,6 +73,7 @@ public class project {
         }
     }
 
+
     static class Monster {
 
         Player pl = new Player(20, 5, 2);
