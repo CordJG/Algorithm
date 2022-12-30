@@ -4,11 +4,17 @@ public class Interface {
     public static void main(String[] args) {
         Tiger tiger = new Tiger();
         Duck duck = new Duck();
-
+        Animal animal = new Animal() {
+            @Override
+            public void cry() {
+                System.out.println("이게뭐람");
+            }
+        };
         tiger.cry();
         tiger.play();
         duck.cry();
         duck.play();
+        animal.cry();
     }
 }
 
