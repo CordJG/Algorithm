@@ -1,5 +1,10 @@
 package 연습;
 
+interface Customer2 {
+    public abstract String getOrder();
+
+
+}
 class CafeCustomer {
     public String CafeCustomerName;
 
@@ -8,22 +13,24 @@ class CafeCustomer {
     }
 }
 
- class CafeCustomerA extends CafeCustomer{
+ class CafeCustomerA implements Customer2{
+    public String getOrder(){
+        return "a glass of iced americano" ;
+    }
 
 
 }
-class CafeCustomerB extends CafeCustomer{
+class CafeCustomerB implements  Customer2{
+    public String getOrder(){
+        return "a glass of strawberry latte" ;
+    }
 
 
 }
 
 class CafeOwner {
-    public void giveItem(CafeCustomerB cafeCustomerB){
-        System.out.println("give a glass of strawberry latte to CafeCustomer B");
-    }
-
-    public void giveItem(CafeCustomerA cafeCustomerA) {
-        System.out.println("give a glass of iced americano to CafeCustomer A");
+    public void giveItem(Customer2 customer){
+        System.out.println("Item : " + customer.getOrder());
     }
 }
 
