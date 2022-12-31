@@ -17,17 +17,18 @@ public class project {
         pl.realdmg=pl.atk-mon.def;
         pl.lefthp=pl.hp-mon.realdmg;
 
-        while (mon.hp <= 0 || pl.hp <= 0) {
+        while (mon.hp > 0 || pl.hp > 0) {
             if (mon.lefthp < mon.hp) {
                 pl.attack(5, 0);
-                mon.hp = mon.lefthp;
                 mon.lefthp=mon.hp-pl.realdmg;
-            }
-            if (pl.lefthp < pl.hp){
+                mon.hp = mon.lefthp;
 
-            pl.defend(20, 5, 2);
-                pl.hp = pl.lefthp;
             }
+//            if (pl.lefthp < pl.hp){
+//
+//            pl.defend(20, 5, 2);
+//                pl.hp = pl.lefthp;
+//            }
 
         }
     }
