@@ -1,15 +1,10 @@
 package 버거퀸;
 
-public class Side {
+public class Side extends Food {
 
-    public int num;
-    public String side;
-    public int kcal;
-    public int price;
-
-    Side(int num, String side, int kcal, int price){
+    Side(int num, String type, int kcal, int price){
         this.num = num;
-        this.side = side;
+        this.type = type;
         this.kcal = kcal;
         this.price = price;
     }
