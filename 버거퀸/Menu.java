@@ -2,6 +2,10 @@ package 버거퀸;
 
 public class Menu {
 
+    Food[] foods = new Food[]{
+
+    };
+
     Burger burger1 = new Burger(1, "새우버거", 500, 3500);
     Burger burger2 = new Burger( 2, "치킨버거", 600, 4000);
     Side side1 = new Side(3, "감자튀김", 300, 1000);
