@@ -1,10 +1,13 @@
 package app;
 
 import app.product.*;
+import java.util.Scanner;
 
 public class OrderApp {
 
     public void start(){
+
+        Scanner scanner= new Scanner(System.in);
 
         ProductRepository productRepository = new ProductRepository();
         Product[] products = productRepository.getAllProducts();
@@ -12,6 +15,7 @@ public class OrderApp {
 
         System.out.println("🍔 BurgerQueen Order Service");
         menu.printMenu();
+        String input = scanner.nextLine();
 
     }
 }
