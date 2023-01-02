@@ -1,4 +1,4 @@
-package 버거퀸;
+package 내가만든버거퀸;
 
 import java.util.Scanner;
 
