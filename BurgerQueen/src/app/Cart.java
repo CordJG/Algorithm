@@ -85,7 +85,7 @@ public class Cart {
         }
 
         Product newProduct;
-        if (product instanceof Hamburger) newProduct = new Hamburger(((Hamburger) product);
+        if (product instanceof Hamburger) newProduct = new Hamburger((Hamburger) product);
         else if (product instanceof Side) newProduct = new Side((Side) product);
         else if (product instanceof Drink) newProduct = new Drink((Drink) product);
         else newProduct = new BurgerSet((BurgerSet) product);
