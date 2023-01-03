@@ -1,9 +1,8 @@
 package app;
 
-import app.product.Product;
-import app.product.ProductRepository;
-import app.product.subproduct.*;
 
+import app.product.*;
+import app.product.subproduct.*;
 
 import java.util.Scanner;
 
@@ -21,14 +20,21 @@ public class Cart {
 
     public void printCart(){
 
+        System.out.println("-".repeat(60));
+
+        printCartItemDetails();
+
+        System.out.println("-".repeat(60));
+
+
     }
 
-    private void printCartItemDetails(){
+    protected void printCartItemDetails(){
         for (Product product : items){
             if(product instanceof BurgerSet){
                 BurgerSet burgerSet = (BurgerSet) product;
                 System.out.printf(
-                        "  %s %6d원  (%s(케첩 %d개), %s(빨대 %s))\n",
+                        "   %s %6d원  (%s(케첩 %d개), %s(빨대 %s))\n",
                         product.getName(),
                         product.getPrice(),
                         burgerSet.getSide().getName(),
@@ -54,7 +60,7 @@ public class Cart {
             }
             else if (product instanceof Drink){
                 System.out.printf(
-                        "  %-8s %6d원 (빨대 %s)\n",
+                        "   %-8s %6d원 (빨대 %s)\n",
                         product.getName(),
                         product.getPrice(),
                         ((Drink) product).hasStraw() ? "있음" : "없음"
@@ -63,14 +69,13 @@ public class Cart {
         }
     }
 
-    private void calculateTotalPrice(){
+    protected int calculateTotalPrice() {
         int sumPrice = 0;
-        for(Product product : items)
-            sumPrice+=product.getPrice();
-        System.out.printf(
-                "합계 :  %d원\n"
-                ,sumPrice
-        );
+        for (Product product : items){
+            sumPrice += product.getPrice();
+    }
+    return sumPrice;
+
     }
 
     public void addToCart(int productId){
