@@ -1,4 +1,4 @@
-package repository;
+package diary.repository;
 
 import diary.write.Plan;
 

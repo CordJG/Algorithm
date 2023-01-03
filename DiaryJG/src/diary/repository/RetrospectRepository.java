@@ -1,6 +1,5 @@
-package repository;
+package diary.repository;
 
-import diary.write.Plan;
 import diary.write.Retrospect;
 
 public class RetrospectRepository {

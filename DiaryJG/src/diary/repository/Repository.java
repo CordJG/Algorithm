@@ -1,4 +1,4 @@
-package repository;
+package diary.repository;
 
 public interface Repository {
 
