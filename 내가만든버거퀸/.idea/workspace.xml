@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcb70f1b-2114-432f-a361-39152832d029" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../BurgerQueen/src/app/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BurgerQueen/src/app/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BurgerQueen/src/app/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BurgerQueen/src/app/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BurgerQueen/src/app/OrderApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BurgerQueen/src/app/OrderApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +24,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Hp/Desktop/CodeStates/내가만든버거퀸"
+    "last_opened_file_path": "C:/Users/Hp/Desktop/CodeStates"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
