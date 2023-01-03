@@ -5,26 +5,25 @@ import discountCondition.DiscountCondition;
 import discountCondition.KidDiscountCondition;
 import discountPolicy.FixedAmountDiscountPolicy;
 import discountPolicy.FixedRateDiscountPolicy;
+import discount.*;
 
 public class Order {
     private Cart cart;
-    private DiscountCondition[] discountConditions;
 
-    public Order(Cart cart, DiscountCondition[] discountConditions){
+    private Discount discount;
+
+
+    public Order(Cart cart, Discount discount){
         this.cart = cart;
-        this.discountConditions = discountConditions;
+        this.discount   = discount;
     }
 
     public void makeOrder(){
 
+        discount.checkAllDiscountConditions();
 
         int sumPrice = cart.calculateTotalPrice();
-        int finalPrice = sumPrice;
-
-        for(DiscountCondition discountCondition : discountConditions){
-            discountCondition.checkDiscountCondition();
-            if (discountCondition.isSatisfied()) finalPrice = discountCondition.applyDiscount(finalPrice);
-        }
+        int finalPrice = discount.discount(sumPrice);
 
 
 
@@ -36,6 +35,8 @@ public class Order {
 
         System.out.println("-".repeat(60));
         System.out.printf("금액 합계       : %d원\n",sumPrice);
+        System.out.printf("할인 금액       : %d원\n",finalPrice-sumPrice);
+        System.out.printf("최종 금액       : %d원\n",finalPrice);
     }
 
 
