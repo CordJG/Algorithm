@@ -1,14 +1,19 @@
 package discountCondition;
 
+import discountPolicy.DiscountPolicy;
 import discountPolicy.FixedAmountDiscountPolicy;
 import discountPolicy.FixedRateDiscountPolicy;
 
 import java.util.Scanner;
 
-public class CozDiscountCondition {
+public class CozDiscountCondition implements DiscountCondition {
 
     private boolean isSatisfied;
-    private FixedRateDiscountPolicy fixedRateDiscountPolicy = new FixedRateDiscountPolicy(10);
+    private DiscountPolicy discountPolicy;
+
+    public CozDiscountCondition(DiscountPolicy discountPolicy){
+        this.discountPolicy = discountPolicy;
+    }
 
 
     public boolean isSatisfied() {
@@ -19,7 +24,7 @@ public class CozDiscountCondition {
         isSatisfied = satisfied;
     }
 
-    public void chekDiscountCondition() {
+    public void checkDiscountCondition() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("코드스테이츠 수강생입니까? (1)_예 (2)_아니오");
@@ -30,6 +35,6 @@ public class CozDiscountCondition {
     }
 
     public int applyDiscount(int price) {
-        return fixedRateDiscountPolicy.calculateDiscountedPrice(price);
+        return discountPolicy.calculateDiscountedPrice(price);
     }
 }

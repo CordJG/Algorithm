@@ -1,6 +1,6 @@
 package discountPolicy;
 
-public class FixedAmountDiscountPolicy {
+public class FixedAmountDiscountPolicy implements DiscountPolicy {
 
     private int discountAmount;
 

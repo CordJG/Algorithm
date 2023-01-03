@@ -1,11 +1,19 @@
 package app;
 
 import app.product.*;
+import discountCondition.CozDiscountCondition;
+import discountCondition.DiscountCondition;
+import discountCondition.KidDiscountCondition;
+import discountPolicy.FixedAmountDiscountPolicy;
+import discountPolicy.FixedRateDiscountPolicy;
+
 import java.util.Scanner;
 
 public class OrderApp {
 
     public void start(){
+
+
 
 
 
@@ -15,7 +23,10 @@ public class OrderApp {
         Product[] products = productRepository.getAllProducts();
         Menu menu = new Menu(products);
         Cart cart = new Cart(productRepository, menu);
-        Order order = new Order(cart);
+        Order order = new Order(cart, new DiscountCondition[]{
+            new CozDiscountCondition(new FixedRateDiscountPolicy(10)),
+                new KidDiscountCondition(new FixedAmountDiscountPolicy(500))
+        });
 
         System.out.println("🍔 BurgerQueen Order Service");
 

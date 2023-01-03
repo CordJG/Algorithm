@@ -1,13 +1,18 @@
 package discountCondition;
 
+import discountPolicy.DiscountPolicy;
 import discountPolicy.FixedAmountDiscountPolicy;
 import discountPolicy.FixedRateDiscountPolicy;
 
 import java.util.Scanner;
 
-public class KidDiscountCondition {
+public class KidDiscountCondition implements DiscountCondition {
     private boolean isSatisfied;
-    private FixedAmountDiscountPolicy fixedAmountDiscountPolicy = new FixedAmountDiscountPolicy(500);
+
+    private DiscountPolicy discountPolicy;
+    public KidDiscountCondition(DiscountPolicy discountPolicy){
+        this.discountPolicy = discountPolicy;
+    }
 
     public boolean isSatisfied() {
         return isSatisfied;
@@ -19,13 +24,13 @@ public class KidDiscountCondition {
 
     public void checkDiscountCondition(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("나이다 어떻게 되십니까?");
+        System.out.println("나이가 어떻게 되십니까?");
         int input = Integer.parseInt(scanner.nextLine());
 
         setSatisfied(input <20);
     }
 
     public int applyDiscount(int price) {
-        return fixedAmountDiscountPolicy.calculateDiscountedPrice(price);
+        return discountPolicy.calculateDiscountedPrice(price);
     }
 }
