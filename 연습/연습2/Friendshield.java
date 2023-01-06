@@ -1,4 +1,4 @@
-package 연습2;
+package 연습.연습2;
 
 
     class Friend {

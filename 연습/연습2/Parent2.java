@@ -1,8 +1,8 @@
-package 연습2;
+package 연습.연습2;
 
-import 연습.Parent;
+import 연습.연습1.Parent;
 
-    class Child extends 연습.Parent{  // package1으로부터 Parent 클래스를 상속
+    class Child extends Parent {  // package1으로부터 Parent 클래스를 상속
         public void printEach() {
             // System.out.println(a); // 에러 발생!
             // System.out.println(b);

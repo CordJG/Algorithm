@@ -1,4 +1,4 @@
-package 연습2;
+package 연습.연습2;
 
 public class Interface {
     public static void main(String[] args) {

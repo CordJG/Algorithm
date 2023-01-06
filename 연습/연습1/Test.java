@@ -1,4 +1,4 @@
-package 연습;
+package 연습.연습1;
 
 public class Test {
     public static void main(String[] args) {

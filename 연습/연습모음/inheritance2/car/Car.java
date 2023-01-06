@@ -1,4 +1,4 @@
-package 연습.inheritance2.car;
+package 연습.연습모음.inheritance2.car;
 
 public class Car {
 

@@ -1,4 +1,4 @@
-package 연습.inheritance;
+package 연습.연습모음.inheritance;
 
 public class inheritance {
     public static void main(String[] args) {

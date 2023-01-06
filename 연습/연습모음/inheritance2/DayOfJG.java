@@ -1,7 +1,7 @@
-package 연습.inheritance2;
+package 연습.연습모음.inheritance2;
 
-import 연습.inheritance2.person.*;
-import 연습.inheritance2.car.*;
+import 연습.연습모음.inheritance2.person.*;
+import 연습.연습모음.inheritance2.car.*;
 
 public class DayOfJG {
     public static void main(String[] args) {
