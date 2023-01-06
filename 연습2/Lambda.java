@@ -5,11 +5,15 @@ public class Lambda {
     public static void main(String[] args) throws Exception{
 
 
-        Jg jg = new Jg();
+       MyFunctionalInterface example;
+       example = (x) -> {
+           int result = x * 5;
+           System.out.println(result);
+       };
+       example.accept(2);
 
-        MyFunctionalInterface example = () -> System.out.println("accept() 호출");
-        example.accept();
-        jg.accept();
+       example = (x) -> System.out.println(x * 5);
+       example.accept(2);
 
 
 
@@ -17,15 +21,7 @@ public class Lambda {
 }
 
 interface MyFunctionalInterface {
-    void accept();
-}
-
-class Jg implements MyFunctionalInterface{
-    @Override
-    public void accept() {
-        System.out.println("이게 뭐냐구");
-
-    }
+    void accept(int x);
 }
 
 
