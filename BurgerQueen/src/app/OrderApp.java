@@ -25,7 +25,7 @@ public class OrderApp {
 
     }
 
-    public void star(){
+    public void start(){
         Scanner scanner= new Scanner(System.in);
 
         System.out.println("🍔 BurgerQueen Order Service");
