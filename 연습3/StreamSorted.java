@@ -12,6 +12,11 @@ public class StreamSorted {
                 .forEach(System.out::println);
         System.out.println();
 
+        animals.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
+        System.out.println();
+
         names.stream().sorted().forEach(System.out::println);
+        System.out.println();
+        names.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
     }
 }
