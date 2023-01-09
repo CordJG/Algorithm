@@ -1,4 +1,5 @@
 package 연습4;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
@@ -7,16 +8,14 @@ public class FileReader {
     public static void main(String[] args) {
         try {
             String fileName = "aouda.txt";
-            FileReader file = new FileReader(fileName);
+            FileWriter writer = new FileWriter(fileName);
 
-            int data = 0;
+            String str = "written!";
+            writer.write(str);
+            writer.close();
 
-            while((data=file.read()) != -1) {
-                System.out.println((char)data);
-            }
-            file.close();
         }
-        catch (IOException e) {
+        catch(IOException e){
             e.printStackTrace();
         }
     }
