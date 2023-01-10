@@ -28,7 +28,7 @@ class Account {
     }
 
     //인출 성공 시 true, 실패 시 false 반환
-    public boolean withdraw(int money) {
+    public synchronized boolean withdraw(int money) {
 
         // 인출 가능 여부 판단 : 잔액이 인출하고자 하는 금액보다 같거나 많아야 합니다.
         if(balance >= money) {
@@ -53,6 +53,7 @@ class Account {
 
 class ThreadTask3 implements Runnable {
     Account account = new Account();
+    CordJgThread4 thread4 = new CordJgThread4();
 
     public void run() {
         while (account.getBalance() > 0) {
@@ -60,15 +61,17 @@ class ThreadTask3 implements Runnable {
             // 100~300원의 인출금을 랜덤으로 정합니다.
             int money = (int) (Math.random() * 3 + 1) * 100;
 
-            // withdraw를 실행시키는 동시에 ㅇ니출 성공 여부를 변수에 할당합니다.
+            // withdraw를 실행시키는 동시에 인출 성공 여부를 변수에 할당합니다.
             boolean denied = !account.withdraw(money);
 
             // 인출 결과 확인
             // 만약, withraw가 false를 리턴하였다면, 즉 인출에 실패했다면,
             // 해당 내역에 -> DENIED를 출력합니다.
-            System.out.println(String.format("Withdraw %d By %s. Balance : %d %s",
+            System.out.println(String.format("Withdraw %d$ By %s. Balance : %d %s",
                     money, Thread.currentThread().getName(), account.getBalance(), denied ? "-> Denied" : "")
             );
+
+
 
         }
     }
