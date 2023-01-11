@@ -1,4 +1,4 @@
-package 연습4;
+package 연습.연습4;
 
 public class CordJgThread {
     public static void main(String[] args) {

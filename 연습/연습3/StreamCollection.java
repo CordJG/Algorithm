@@ -1,4 +1,4 @@
-package 연습3;
+package 연습.연습3;
 import java.util.*;
 import java.util.stream.Stream;
 

@@ -1,4 +1,4 @@
-package 연습4;
+package 연습.연습4;
 
 interface LambdaJg3{
     void play3(String x);

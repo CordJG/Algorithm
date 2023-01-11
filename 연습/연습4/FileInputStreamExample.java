@@ -1,7 +1,5 @@
-package 연습4;
+package 연습.연습4;
 
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.*;
 

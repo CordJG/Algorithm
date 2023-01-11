@@ -1,6 +1,4 @@
-package 연습4;
-
-import java.sql.SQLOutput;
+package 연습.연습4;
 
 public class CordJgThread4 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package 연습4;
+package 연습.연습4;
 import java.util.*;
 
 public class CordJgArray {

@@ -1,5 +1,4 @@
-package 연습3;
-import java.util.*;
+package 연습.연습3;
 import java.util.stream.IntStream;
 
 public class StreamEX2 {

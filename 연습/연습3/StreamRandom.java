@@ -1,7 +1,5 @@
-package 연습3;
-import java.util.*;
+package 연습.연습3;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class StreamRandom {
     public static void main(String[] args) {

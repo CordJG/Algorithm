@@ -1,6 +1,4 @@
-package 연습4;
-
-import java.sql.SQLOutput;
+package 연습.연습4;
 
 enum Animals {
         MONKEY,
