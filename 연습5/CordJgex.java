@@ -8,7 +8,6 @@ public class CordJgex {
             return f(n-1)+f(n-2);
         }
     }
-
     public static int f2(int n) {
         int num1 = 1;
         int num2 = 1;
@@ -22,11 +21,9 @@ public class CordJgex {
                 sumNum = num1 + num2;
 
             }
-
         }
         return sumNum;
     }
-
 
     public static void main(String[] args) {
         System.out.println(f(30));
