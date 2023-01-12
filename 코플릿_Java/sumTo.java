@@ -5,12 +5,12 @@ public class sumTo {
         if(num==1) return 1;
         else{
 
-            return f(num-1)+1 ;
+            return f(num-1)+num;
 
         }
-        //TODO..
+
     }
     public static void main(String[] args) {
-        System.out.println(f(3));
+        System.out.println(f(5));
     }
 }
