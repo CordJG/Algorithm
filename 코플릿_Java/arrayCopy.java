@@ -12,7 +12,8 @@ public class arrayCopy {
     public static void main(String[] args) {
         System.arraycopy(a,0,c,0,a.length);
         System.arraycopy(b,0,c,a.length,b.length);
-        int[] d = Arrays.copyOf(a,5);
+        int[] d = new int[10];
+        d = Arrays.copyOf(a,5);
         d = Arrays.copyOf(b, 4);
 
         System.out.println(Arrays.toString(c));
