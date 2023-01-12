@@ -1,4 +1,4 @@
-package 연습5;
+package 연습.연습5;
 
 public class CordJgex {
 
