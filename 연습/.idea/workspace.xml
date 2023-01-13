@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84809a8f-afd5-4ace-964a-7347baaec81c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../DiaryJG/KPT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DiaryJG/내가할일.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/연습5/BankRate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/연습5/List.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/연습5/two.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="84809a8f-afd5-4ace-964a-7347baaec81c" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/연습5/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/연습5/List.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +47,18 @@
       <option name="presentableId" value="Default" />
       <updated>1672811736593</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1673620119568</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673620119568</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>
