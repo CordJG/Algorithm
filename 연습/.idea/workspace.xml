@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84809a8f-afd5-4ace-964a-7347baaec81c" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/out/production/연습/연습/연습5/CordJgMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/연습/연습/연습5/CordJgTreeSet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/연습5/CordJgMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/연습/연습/연습5/CordJgSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/연습/연습/연습5/CordJgSet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/연습/연습/연습5/List.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/연습/연습/연습5/List.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/연습5/CordJgSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/연습5/CordJgSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/연습5/CordJgTreeSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/연습5/CordJgTreeSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/연습5/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/연습5/List.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673686038439</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit">
+      <created>1673688603105</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673688603105</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
