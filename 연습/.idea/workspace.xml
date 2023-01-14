@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84809a8f-afd5-4ace-964a-7347baaec81c" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/out/production/연습/연습/연습5/CordJgMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/연습/연습/연습5/CordJgTreeSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/연습5/CordJgMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="84809a8f-afd5-4ace-964a-7347baaec81c" name="Changes" comment="commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673688603105</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit">
+      <created>1673690873661</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673690873661</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
