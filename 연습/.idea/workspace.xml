@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84809a8f-afd5-4ace-964a-7347baaec81c" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/../out/production/CodeStates/BurgerQueen/BurgerQueen.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../out/production/CodeStates/DiaryJG/DiaryJG.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../out/production/CodeStates/내가만든버거퀸/내가만든버거퀸.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../out/production/CodeStates/연습/out/production/연습/연습/연습.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../out/production/CodeStates/연습/연습.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/연습/연습/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/연습/연습/연습5/linkedList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/연습5/linkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DiaryJG/내가할일.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DiaryJG/내가할일.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/연습/연습/연습5/CordJgIterator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/연습5/CordJgIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/연습/연습/연습5/List.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/연습/연습/연습5/List.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/연습/연습/연습5/linkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/연습/연습/연습5/linkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/연습5/linkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/연습5/linkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673627554439</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit">
+      <created>1673675579948</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673675579948</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

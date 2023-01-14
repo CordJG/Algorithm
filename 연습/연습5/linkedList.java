@@ -4,7 +4,7 @@ import java.util.*;
 public class linkedList {
     public static void main(String[] args) {
         LinkedList<String> linkList = new LinkedList<>();
-        ArrayList<String> arrayList = new ArrayList<>();
+        ArrayList<String> arrayList = new ArrayList<>(10);
 
         linkList.add("cat");
         linkList.add("cuty");
