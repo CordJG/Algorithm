@@ -20,5 +20,6 @@ public class List {
 
             System.out.println(String.valueOf(bool));
         }
+        System.out.println(list);
     }
 }

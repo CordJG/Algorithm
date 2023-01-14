@@ -14,5 +14,6 @@ public class CordJgSet {
             int num = iter.next();
             System.out.println(num);
         }
+        System.out.println(hashSet);
     }
 }
