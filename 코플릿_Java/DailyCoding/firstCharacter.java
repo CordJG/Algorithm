@@ -14,9 +14,10 @@ public class firstCharacter {
         String result="" ;
         while(i<splitStr.length){
 
-            result +=String.valueOf(splitStr[i].charAt(0));
-            System.out.println(str2);
+            result +=String.valueOf(splitStr[i].charAt(0)).concat(" ");
+
             i++;
+
 
         }
         System.out.println(result);
