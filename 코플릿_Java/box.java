@@ -8,14 +8,30 @@ public class box {
         Integer[] boxes = new Integer[]{10,1,3,5,2,7,11,2,3,4,5,6,7,8,9,10};
 
         List<Integer> list = Arrays.asList(boxes);
+        int num=0;
+        int count =1;
+        int count2 =1;
 
-        for(int i=0; i<boxes.length; i++){
-            if(boxes[0]<boxes[i]){
-                int count= i+1;
+        for(int i=1; i<boxes.length; i++){
+            if(boxes[0]>boxes[i]){
+              count++;
+              num=list.indexOf(i);
+            }
+        }
+        for(int j=num; j<boxes.length; j++){
+            if(boxes[num]>boxes[j+1]){
+                count2++;
             }
         }
 
-        Queue<Integer> queue = new LinkedList<>(list);
+        int n = Math.max(count, count2);
+
+
+
+
+
+//
+//        Queue<Integer> queue = new LinkedList<>(list);
 
 
 
