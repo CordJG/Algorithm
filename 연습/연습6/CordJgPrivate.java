@@ -21,7 +21,7 @@ class Neo{
     private int dffend;
     private int hp;
     private int mp;
-    void run(){
+    private void run(){
         System.out.println("공격하였습니다");
     }
 
