@@ -29,7 +29,7 @@ public class Queue2 {
         // 그러니까 바로 들어올 경우는 +1초 늦게 들어올 수록 +1초가 증가됨
         // 이 값들을 추가 , 기본 시간은 buffersize+1 시간
         //일단 스택안에 들어있는 요소들의 합을 구하자 => 구함
-        int[] documents = new int[]{7, 4, 5, 6, 10, 15, 8, 20, 5};
+        int[] documents = new int[]{7,4,5,6};
         Integer[] documents2 = new Integer[documents.length];
         for (int i = 0; i < documents.length; i++) {
             documents2[i] = documents[i];
@@ -37,11 +37,11 @@ public class Queue2 {
         Queue<Integer> queue = new LinkedList<Integer>(Arrays.asList(documents2));
         Queue<Integer> stack = new LinkedList<>();
 
-        int bufferSize = 5;
+        int bufferSize = 2;
         for (int i = 0; i < bufferSize; i++) {
             stack.add(0);
         }
-        int capacities = 30;
+        int capacities = 10;
         int count = 0;
         int sum = 0;
 
@@ -60,13 +60,15 @@ public class Queue2 {
                     stack.add(queue.peek());
                     sum += queue.poll();
                 } else if (sum + queue.peek() > capacities) {
-                    sum -= stack.peek();
-                    stack.poll();
-                    stack.add(0);
+                    sum -= stack.poll();
+                    if(sum+queue.peek()<=capacities){
+                        sum = sum+queue.peek();
+                        stack.add(queue.poll());
+                    }else if(sum+queue.peek()>capacities){stack.add(0);}
                 }
-//                if (sum == 0) {
-//                    break;
-//                }
+                if (sum == 0) {
+                    break;
+                }
             }
             System.out.println(stack);
             System.out.println(queue);

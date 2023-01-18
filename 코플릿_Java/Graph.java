@@ -33,15 +33,14 @@ public class Graph {
 
             }
         for(int i=0; i<edges.length; i++) {
-            for (int j = 0; j < edges[i].length-1; j++) {
+            int a= edges[i][0];
+            int b =edges[i][1];
                     if (edges[i][2] == 0) {
-                        graph[edges[i][0]][edges[i][1]] = 1;
-                    } else if (edges[i][2] == 1) {dd
-                        graph[edges[i][0]][edges[i][1]] = 1;
-                        graph[edges[0][i]][edges[0][i]] = 1;
+                        graph[a][b] = 1;
+                    } else if (edges[i][2] == 1) {
+                        graph[a][b] = 1;
+                        graph[b][a] = 1;
                     }
-
-            }
         }
         System.out.println(Arrays.deepToString(graph));
     }
