@@ -3,11 +3,12 @@ package 연습.연습6;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 public class Queue2 {
     public static void main(String[] args) {
 
-         //인쇄 목록 크기 즉 3칸이면
+        //인쇄 목록 크기 즉 3칸이면
         //음... queue 타입 스택을 하나 만들어 준다 , 그 스택에는 capacities 합이 넘어가면
         //documents 요소들이 들어가지 못한다.
         // 하나의 요소가 들어가면 buffersize 만큼의 이동이 필요적이고 그 이동이 끝난 후
@@ -29,38 +30,49 @@ public class Queue2 {
         // 이 값들을 추가 , 기본 시간은 buffersize+1 시간
         //일단 스택안에 들어있는 요소들의 합을 구하자 => 구함
 
-        int[] documents = new int[]{7,4,5,6};
+        int[] documents = new int[]{7, 4, 5, 6, 10, 15, 8, 20, 5};
         Integer[] documents2 = new Integer[documents.length];
         for (int i = 0; i < documents.length; i++) {
             documents2[i] = documents[i];
         }
         Queue<Integer> queue = new LinkedList<Integer>(Arrays.asList(documents2));
         Queue<Integer> stack = new LinkedList<>();
-        int bufferSize = 2;
-        int capacities= 10;
-        int count=0;
-        int countNum = 0;
-        int sum = 0;
-        int result ;
-        int countDown = 0;
 
-        while(queue.size()>0){
-            count++;
-            if(sum<=capacities){
-                stack.add(queue.peek());
-                sum+= queue.poll();
-                countDown+=1;
-            }
-            if(sum>capacities){
-                countNum++;
-                countDown+=2;
-            }
-            if(count==bufferSize+1|| count==bufferSize+1+countDown){
-                stack.poll();
-            }
+        int bufferSize = 5;
+        for (int i = 0; i < bufferSize; i++) {
+            stack.add(0);
         }
-        result = bufferSize+documents.length+countNum;
-        System.out.println(result);
+        int capacities = 30;
+        int count = 0;
+        int sum = 0;
+
+        while (queue.size() > 0 || stack.size() != 0) {
+            count++;
+            if (queue.peek() == null) {
+                if (sum <= capacities) {
+                    stack.poll();
+                } else if (sum > capacities) {
+                    sum -= stack.peek();
+                    stack.poll();
+                }
+            } else {
+                if (sum + queue.peek() <= capacities) {
+                    stack.poll();
+                    stack.add(queue.peek());
+                    sum += queue.poll();
+                } else if (sum + queue.peek() > capacities) {
+                    sum -= stack.peek();
+                    stack.poll();
+                    stack.add(0);
+                }
+//                if (sum == 0) {
+//                    break;
+//                }
+            }
+            System.out.println(stack);
+            System.out.println(queue);
+        }
+        System.out.println(count);
     }
 }
 
