@@ -1,4 +1,4 @@
-package 코플릿_Java;
+package 코플릿_Java.Graph;
 
 import java.util.Arrays;
 import java.util.stream.*;
