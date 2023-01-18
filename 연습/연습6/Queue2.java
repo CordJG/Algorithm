@@ -29,7 +29,6 @@ public class Queue2 {
         // 그러니까 바로 들어올 경우는 +1초 늦게 들어올 수록 +1초가 증가됨
         // 이 값들을 추가 , 기본 시간은 buffersize+1 시간
         //일단 스택안에 들어있는 요소들의 합을 구하자 => 구함
-
         int[] documents = new int[]{7, 4, 5, 6, 10, 15, 8, 20, 5};
         Integer[] documents2 = new Integer[documents.length];
         for (int i = 0; i < documents.length; i++) {

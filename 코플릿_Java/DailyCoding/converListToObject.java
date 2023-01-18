@@ -15,7 +15,6 @@ public class converListToObject {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                 str[arr[i].length * i + j] = arr[i][j];
-
             }
         }
 
@@ -24,6 +23,10 @@ public class converListToObject {
         HashMap<String, String> map = new HashMap<>();
         for (int i = 0; i < str.length; i += 2) {
             map.put(str[i], str[i + 1]);
+
+        }
+        if(map.containsKey(null) || map.containsKey(null)){
+            map.clear();
         }
 
         System.out.println(map);
