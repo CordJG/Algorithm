@@ -15,7 +15,7 @@ public class Greedy3 {
                 newBoard[i * length + j] = board[i][j];
             }
         }
-        System.out.println(Arrays.toString(newBoard));
+        System.out.println(Arrays.toString(newBoard))
             int n=0;
             Integer count=0;
 
