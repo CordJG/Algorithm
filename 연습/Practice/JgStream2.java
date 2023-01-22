@@ -4,12 +4,10 @@ import java.util.stream.*;
 public class JgStream2 {
     public static void main(String[] args) {
 
-        String[] arr = new String[]{"고양이","호랑이","설날"};
+       int[] intArr = {10,20,30,50};
+       IntStream intStream = Arrays.stream(intArr);
 
-        Stream<String> stream =Stream.of(arr);
-
-        stream.forEach(System.out::println);
-
+        System.out.println("평균은 = " +intStream.average().getAsDouble());
 
     }
 }
