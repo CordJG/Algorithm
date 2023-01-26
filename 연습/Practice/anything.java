@@ -1,27 +1,43 @@
 package 연습.Practice;
 
-import 연습.연습4.CordJg;
+import java.util.*;
 
 public class anything {
-    static int num;
-    static int sum;
+    static int[] a = new int[]{};
 
     public static void main(String[] args) {
 
-        System.out.println(CordJg(0));
+        System.out.println(Arrays.toString(CordJg(2,a)));
 
     }
-    public static int CordJg(int count){
+    public static int[] CordJg(int coin,int[] b){
+        int[] concatArray = new int[0];
 
-        if(count==5){
-           sum = num;
-           return sum;
+        if(coin==0){
+
+            return concatArray;
+
         }
 
-        num=num+1;
-        System.out.println(num);
-        CordJg(count+1);
-        return sum;
+
+        for(int i = 0; i < 3; i++) {
+
+            int number = i;
+
+
+            concatArray = Arrays.copyOf(b, b.length + 1);
+            concatArray[concatArray.length - 1] = number;
+
+            System.out.println(Arrays.toString(concatArray));
+
+
+
+            CordJg(coin - 1, concatArray);
+
+
+        }
+        return concatArray;
     }
 }
+
 

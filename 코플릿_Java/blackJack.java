@@ -8,7 +8,7 @@ public class blackJack {
         int sum = 0;
 
         List<Integer> list = new ArrayList<>();
-        boolean prime = true;
+
         int count = 0;
         // 카드를 3장 뽑아 5c3
         for (int i = 0; i < cards.length - 2; i++) {

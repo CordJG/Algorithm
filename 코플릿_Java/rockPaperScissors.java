@@ -29,6 +29,8 @@ public class rockPaperScissors {
             String[] concatArray = Arrays.copyOf(playedSoFar, playedSoFar.length + 1);
             concatArray[concatArray.length - 1] = currentPlay;
 
+            System.out.println(Arrays.toString(concatArray));
+
 
             outcomes = permutation(roundsToGo - 1, concatArray, outcomes);
         }
