@@ -1,7 +1,6 @@
 package 코플릿_Java.DailyCoding;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.*;
 
@@ -41,7 +40,6 @@ public class numberSearch {
         System.out.println(sum);
         int result = (int) Math.round(sum/str3.length());
         System.out.println(result);
-
 
     }
 }
