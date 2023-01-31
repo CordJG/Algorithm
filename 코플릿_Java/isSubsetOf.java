@@ -6,6 +6,7 @@ public class isSubsetOf {
         int[] sample = new int[]{1,3};
 
         int count=0;
+        boolean a=false;
 
         for(int i=0; i<sample.length; i++){
             for(int j=0; j<base.length; j++){
@@ -15,6 +16,7 @@ public class isSubsetOf {
                 }
             }
         }
-        if(count==sample.length) true;
+        if(count==sample.length) a=true;
+        System.out.println(a);
     }
 }
