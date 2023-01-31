@@ -6,26 +6,29 @@ public class fibonacci {
     public static void main(String[] args) {
         Fibo fibo = new Fibo();
 
-        int fiboNum= fibo.fibona(3);
+        int fiboNum= fibo.fibona(9);
         System.out.println(fiboNum);
     }
 }
-
 class Fibo{
+
+    int x=0;
+    int y=1;
 
     int fibona(int num){
 
-        int[] arr = new int[1000];
+        if(num==0) return 0;
+        if(num==1) return 1;
 
-        if(arr[num]!=0){
-        }else{
-            if(num==0) arr[num]=0;
-            else if(num==1) arr[num]=1;
-            else{
-                arr[num] = fibona(num-1)+fibona(num-2);
-            }
-        }
-        return arr[num];
+        int sumNum= x+y;
+        x=y;
+        y=sumNum;
+        if(num==2) return sumNum;
+
+        num=num-1;
+
+
+
+        return fibona(num);
     }
 }
-
