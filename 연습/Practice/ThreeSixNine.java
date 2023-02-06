@@ -7,8 +7,7 @@ public class ThreeSixNine {
 
       Play play = new Play();
 
-        System.out.println(play.call2(369));
-
+        System.out.println(play.call2(66));
 
     }
 }
