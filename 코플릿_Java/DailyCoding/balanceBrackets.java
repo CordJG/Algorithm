@@ -17,8 +17,12 @@ public class balanceBrackets {
         // 인덱스를 찾아서 그 이후부터 ) 를 찾으면 된다
 
 
-        String str = "[(]{)}";
-        int num=0;
+        //음 개수가 맞아야 한다 -> count로 구현
+        // 짝이 맞아야 한다 -> ?
+        //
+
+
+        String str = "(())()(())";
         int count2=0;
         int count1=0;
         boolean output = true;
@@ -32,31 +36,31 @@ public class balanceBrackets {
                 }
             }
 
-            for (int i = str.length() - 1; i >= 0; i--) {
-                if (str.charAt(i) == chars[k]) {
-                    num = i;
-                    break;
-                }
-            }
 
-            for (int j = num; j < str.length(); j++) {
+
+
+            for (int j = 0; j < str.length(); j++) {
                 if (str.charAt(j) == chars[k+1]) {
                     count2++;
-
                 }
             }
 
-            // 2중 for문으로 ( 와 ) 를 찾고 흠...재귀함수로 괄호 세개 해주면 될 거 같은데? ...일단 스킵
+
             int n=1;
-            for(int i= 0; i< str.length(); i++){
-                for(int j=n; j< str.length(); j++){
-                    if(str.charAt(i)==chars[k]&& str.charAt(j)==chars[k+1]){
-                        n=j+1;
+            for(int i= 0; i< str.length(); i++) {
+                for (int j = n; j < str.length(); j++) {
+                    if (str.charAt(i) == chars[k] && str.charAt(j) == chars[k + 1]) {
+                        n = j + 1;
 
-                        for(int m=i+1; m<n; m++ ){
+                        System.out.println(n);
 
-                        }
                         break;
+                    } else if (str.charAt(i) != chars[k] && str.charAt(j) == chars[k + 1]) {
+                        output = false;
+
+                    } else if (str.charAt(i) == chars[k] && str.charAt(j) != chars[k + 1]) {
+                        output = false;
+
                     }
                 }
             }
@@ -64,11 +68,15 @@ public class balanceBrackets {
 
             if (count2 != count1) {
                 output = false;
-
                 break;
             }
-            if(count1==0 && count2==0) output=true;
-            if(str.length()==0) output=true;
+
+            if(count1==0 && count2==0) {output=true;}
+            if(str.length()==0) {output=true;}
+
+
+            count2=0;
+            count1=0;
 
         }
         System.out.println(output);
