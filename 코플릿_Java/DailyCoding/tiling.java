@@ -5,13 +5,29 @@ import java.util.Arrays;
 public class tiling {
     public static void main(String[] args) {
 
-        // row면 뒤에 rowed
-        // column 이면 뒤에 row or column
-        String[] newArray = {};
-        newArray = new String[newArray.length+1];
+        CordJg cordJg = new CordJg();
+        int n = cordJg.play(15);
+        System.out.println(n);
 
-        newArray[newArray.length-1] = "a";
 
-        System.out.println(Arrays.toString(newArray));
+    }
+}
+
+class CordJg {
+    int x = 1;
+    int y = 2;
+    int sum =0;
+    int play(int num) {
+
+        if(num==1) return 1;
+        if(num==2) return 2;
+        for(int i=1; i<=num-2; i++) {
+            sum = x + y;
+
+            x = y;
+            y = sum;
+        }
+
+        return sum ;
     }
 }
