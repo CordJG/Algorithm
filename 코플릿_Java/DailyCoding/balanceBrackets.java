@@ -22,28 +22,48 @@ public class balanceBrackets {
         //
 
 
-        String str = "(())()(())";
+        String str = ")";
         int count2=0;
         int count1=0;
+        int num=0;
         boolean output = true;
         char[] chars = {'(',')','{','}','[',']'};
         for(int k=0; k<chars.length; k+=2) {
 
-
-            for (int i = 0; i < str.length(); i++) {
-                if (str.charAt(i) == chars[k]) {
-                    count1++;
+            for(int i=0; i<str.length(); i++){
+                if(str.contains(String.valueOf(chars[k]))&&str.contains(String.valueOf(chars[k+1]))) {
+                    if (str.charAt(i) == chars[k]) {
+                        count1++;
+                        num = i + 1;
+                        i = num - 1;
+                        for (int j = num; j < str.length(); j++) {
+                            if (str.charAt(j) == chars[k + 1]) {
+                                count2++;
+                                break;
+                            }
+                        }
+                    }
                 }
             }
+            System.out.println(count2);
+            System.out.println(count1);
 
 
 
-
-            for (int j = 0; j < str.length(); j++) {
-                if (str.charAt(j) == chars[k+1]) {
-                    count2++;
-                }
-            }
+//            for (int i = 0; i < str.length(); i++) {
+//                if (str.charAt(i) == chars[k]) {
+//                    count1++;
+//                }
+//            }
+//
+//
+//
+//
+//            for (int j = 0; j < str.length(); j++) {
+//                if (str.charAt(j) == chars[k+1]) {
+//                    count2++;
+//                }
+//            }
 
 
             int n=1;
@@ -52,7 +72,7 @@ public class balanceBrackets {
                     if (str.charAt(i) == chars[k] && str.charAt(j) == chars[k + 1]) {
                         n = j + 1;
 
-                        System.out.println(n);
+
 
                         break;
                     } else if (str.charAt(i) != chars[k] && str.charAt(j) == chars[k + 1]) {
@@ -71,7 +91,7 @@ public class balanceBrackets {
                 break;
             }
 
-            if(count1==0 && count2==0) {output=true;}
+            if(count1==0 && count2==0) {output=false;}
             if(str.length()==0) {output=true;}
 
 
