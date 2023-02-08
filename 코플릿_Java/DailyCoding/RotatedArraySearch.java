@@ -5,7 +5,7 @@ public class RotatedArraySearch {
 
         CordJgRotate cj = new CordJgRotate();
 
-        int n = cj.play(new int[]{4,5,6,0,1,2,3},100);
+        int n = cj.play(new int[]{4,5,6,0,1,2,3},2);
         System.out.println(n);
 
 

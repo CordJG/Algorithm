@@ -21,8 +21,17 @@ public class balanceBrackets {
         // 짝이 맞아야 한다 -> ?
         //
 
+        // 아까 아이디어
+        // 조건 1. 양 괄호의 개수가 같다 ㅇ
+        // 조건 2. '('을 뒤에서 부터 순회하고 ')'을 앞에서 순회 했을 때 i 값이 j보다 크면 false  ㅇ
+        // 조건 3. '(' ')' 사이에 다른 괄호의 개수들을 확인 했을 때 같지 않으면 false
 
-        String str = ")";
+
+
+
+        String str = "(())()(())";
+        int count3=0;
+        int count4=0;
         int count2=0;
         int count1=0;
         int num=0;
@@ -31,11 +40,12 @@ public class balanceBrackets {
         for(int k=0; k<chars.length; k+=2) {
 
             for(int i=0; i<str.length(); i++){
-                if(str.contains(String.valueOf(chars[k]))&&str.contains(String.valueOf(chars[k+1]))) {
+                if((str.contains("(")&&str.contains(")")) || (str.contains("{")&&str.contains("}")) || (str.contains("{")&&str.contains("}")) ) //하나씩만 들어간 경우 죄다 false
+                 {
                     if (str.charAt(i) == chars[k]) {
                         count1++;
-                        num = i + 1;
-                        i = num - 1;
+                        num = i+1 ;
+                        i = num-1 ;
                         for (int j = num; j < str.length(); j++) {
                             if (str.charAt(j) == chars[k + 1]) {
                                 count2++;
@@ -43,44 +53,45 @@ public class balanceBrackets {
                             }
                         }
                     }
-                }
+                } else{ output = false;}
             }
-            System.out.println(count2);
-            System.out.println(count1);
 
 
 
-//            for (int i = 0; i < str.length(); i++) {
-//                if (str.charAt(i) == chars[k]) {
-//                    count1++;
-//                }
-//            }
-//
-//
-//
-//
-//            for (int j = 0; j < str.length(); j++) {
-//                if (str.charAt(j) == chars[k+1]) {
-//                    count2++;
-//                }
-//            }
+            int num1 = str.length()-1;
+            int num2 = str.length()-1;
+            for(int i= num1; i>= 0; i--) {
+                for (int j = num2; j >=0; j--) {
+                    if (str.charAt(i) == chars[k] &&str.charAt(j) == chars[k + 1]){
 
+                        System.out.println(i);
+                        System.out.println(j);
 
-            int n=1;
-            for(int i= 0; i< str.length(); i++) {
-                for (int j = n; j < str.length(); j++) {
-                    if (str.charAt(i) == chars[k] && str.charAt(j) == chars[k + 1]) {
-                        n = j + 1;
+                        if(i>j) {output = false;}
+                        if(i<j){
+                            for(int p=0; p<6; p+=2) {
+                                for (int m = i + 1; m < j ;  m++) {
+                                    if (str.charAt(m) == chars[p] && str.charAt(m) !=chars[k] ) {
+                                        count3++;
 
+                                    }
+                                    if (str.charAt(m) == chars[p + 1]  && str.charAt(m) !=chars[k+1]) {
+                                        count4++;
+                                    }
+                                }
+                                if(count3!=count4) {output=false;}
 
+//                                System.out.println(count3);
+//                                System.out.println(count4);
 
+                                count3=0;
+                                count4=0;
+                            }
+
+                        }
+                        num1=i;
+                        num2=j-1;
                         break;
-                    } else if (str.charAt(i) != chars[k] && str.charAt(j) == chars[k + 1]) {
-                        output = false;
-
-                    } else if (str.charAt(i) == chars[k] && str.charAt(j) != chars[k + 1]) {
-                        output = false;
-
                     }
                 }
             }
@@ -91,9 +102,7 @@ public class balanceBrackets {
                 break;
             }
 
-            if(count1==0 && count2==0) {output=false;}
             if(str.length()==0) {output=true;}
-
 
             count2=0;
             count1=0;
