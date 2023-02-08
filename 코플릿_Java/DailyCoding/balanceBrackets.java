@@ -29,7 +29,7 @@ public class balanceBrackets {
 
 
 
-        String str = "(())()(())";
+        String str = "[(({))()((})])";
         int count3=0;
         int count4=0;
         int count2=0;
@@ -64,8 +64,6 @@ public class balanceBrackets {
                 for (int j = num2; j >=0; j--) {
                     if (str.charAt(i) == chars[k] &&str.charAt(j) == chars[k + 1]){
 
-                        System.out.println(i);
-                        System.out.println(j);
 
                         if(i>j) {output = false;}
                         if(i<j){
@@ -81,8 +79,7 @@ public class balanceBrackets {
                                 }
                                 if(count3!=count4) {output=false;}
 
-//                                System.out.println(count3);
-//                                System.out.println(count4);
+
 
                                 count3=0;
                                 count4=0;
