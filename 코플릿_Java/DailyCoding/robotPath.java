@@ -6,6 +6,7 @@ public class robotPath {
 
         List<int[]> list = new ArrayList<>();
 
+
         Robot robot = new Robot();
         int countNum = robot.play(list);
 
@@ -33,17 +34,14 @@ class Robot{
             {0, 0, 1, 1, 1, 0},
             {1, 0, 0, 0, 0, 0}
     };
-    int[] src = new int[]{4,2};
-    int[] dst = new int[]{2,2};
+    int[] src = new int[]{2,2};
+    int[] dst = new int[]{4,2};
 
     int y = src[0];
     int x = src[1];
 
-    int y2 = dst[0];
-    int x2 = dst[1];
-
-
     int count=0;
+    boolean ongoing=true;
 
 
     int left = room[y][x-1];
@@ -52,15 +50,25 @@ class Robot{
     int up = room[y+1][x];
     int down = room[y-1][x];
 
-    List<int[]> list = new ArrayList<>();
     int play(List<int[]> list){
+
         Iterator<int[]> it = list.iterator();
+
+        while(it.hasNext()){
+            if(it.next()==src){
+                it.remove();
+                break;
+            }
+        }
         while(it.hasNext()){
             if(it.next()!=src){
                 it.remove();
+            }else{
+                ongoing=false;
+                break;
             }
         }
-        if(it.hasNext()==false && x>=0 && y>=0 && x<room[0].length && y<room.length) {
+        if(ongoing==false && x>=0 && y>=0 && x<room[0].length && y<room.length) {
             if (left == 0 && x>0) {
                 x = x - 1;
                 src[0] = y;
@@ -92,8 +100,10 @@ class Robot{
 
             return count;
 
+        }else{
+            play(list);
         }
-        play(list);
+
 
         return count;
     }
