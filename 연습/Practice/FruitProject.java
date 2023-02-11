@@ -12,9 +12,7 @@ public class FruitProject {
         System.out.println(repo.Apple.getName());
 
 
-
         }
-
 
 }
 
@@ -39,17 +37,6 @@ class Repository {
         }
         return list;
     }
-
-//    void printRepo(){
-//        System.out.println("-".repeat(50));
-//        for(lists : lis){
-//            if(a instanceof )
-//        }
-//
-//    }
-//
-//
-//}
 
 
     class Apple extends Fruit {
