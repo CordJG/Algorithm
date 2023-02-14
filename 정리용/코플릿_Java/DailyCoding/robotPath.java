@@ -17,15 +17,6 @@ public class robotPath {
         }
 
 
-
-
-
-
-
-
-
-
-
 class Robot{
     int[][] room = new int[][]{
             {0, 0, 0, 0, 0, 0},
