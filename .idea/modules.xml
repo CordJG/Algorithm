@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/CodeStates.iml" filepath="$PROJECT_DIR$/.idea/CodeStates.iml" />
+      <module fileurl="file://$PROJECT_DIR$/정리용/BurgerQueen/BurgerQueen.iml" filepath="$PROJECT_DIR$/정리용/BurgerQueen/BurgerQueen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeStates.iml" filepath="$PROJECT_DIR$/CodeStates.iml" />
+      <module fileurl="file://$PROJECT_DIR$/정리용/DiaryJG/DiaryJG.iml" filepath="$PROJECT_DIR$/정리용/DiaryJG/DiaryJG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/정리용/정리용.iml" filepath="$PROJECT_DIR$/정리용/정리용.iml" />
     </modules>
   </component>
 </project>
