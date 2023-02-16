@@ -28,7 +28,6 @@ public class anything {
             concatArray = Arrays.copyOf(b, b.length + 1);
             concatArray[concatArray.length - 1] = number;
 
-            System.out.println(Arrays.toString(concatArray));
 
 
 
