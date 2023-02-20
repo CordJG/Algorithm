@@ -1,4 +1,4 @@
-package codingTest;
+package codingTest.bronze;
 
 import java.util.Scanner;
 

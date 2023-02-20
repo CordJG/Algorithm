@@ -1,7 +1,8 @@
-package codingTest;
+package codingTest.silver;
 
 import java.math.BigInteger;
 import java.util.Scanner;
+
 
 // N! 뒤에서부터 처음 0이 아닌 숫자가 나올 떄까지 0의 개수를 구하는 프로그램
 // 나처럼 구하는 경우 int,Integer 타입으로는 팩토리얼값으로 나오는 큰 수들을 다 표현할 수 없기 때문에
