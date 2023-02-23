@@ -1,20 +1,29 @@
 package codingTest.silver;
 
+import java.security.BasicPermission;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
 public class Battle1303 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
+
         int M = sc.nextInt();
+        int N = sc.nextInt();
+        sc.nextLine();
         char[][] arr = new char[N][M];
 
+
         for (int i = 0; i < N; i++) {
-            String str = sc.next();
-            for(int j=0; j<M; j++) {
-                arr[i][j] = str.charAt(j);
+            String str =sc.nextLine().replaceAll("\\\"", "");
+            for (int j = 0; j < M; j++) {
+                if (str.length() == 0) {
+                } else {
+                    arr[i][j] = str.charAt(j);
+                }
             }
         }
 
@@ -63,9 +72,13 @@ public class Battle1303 {
                     wPower += count * count;
                 }
 
+
+
             }
         }
+
         System.out.println(wPower + " " + bPower);
+
     }
 }
 
