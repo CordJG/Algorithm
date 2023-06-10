@@ -1,11 +1,7 @@
 package codingTest.silver;
 
-import java.security.BasicPermission;
-import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+
+import java.util.*;
 
 public class Battle1303 {
     public static void main(String[] args) {
@@ -14,71 +10,76 @@ public class Battle1303 {
         int M = sc.nextInt();
         int N = sc.nextInt();
         sc.nextLine();
-        char[][] arr = new char[N][M];
+        String[][] arr = new String[N][M];
 
 
         for (int i = 0; i < N; i++) {
-            String str =sc.nextLine().replaceAll("\\\"", "");
+            String[] line = sc.nextLine().split("");
             for (int j = 0; j < M; j++) {
-                if (str.length() == 0) {
-                } else {
-                    arr[i][j] = str.charAt(j);
+               arr[i][j] = line[j];
+            }
+        }
+        int[] power = getPower(arr);
+        int wPower = power[0];
+        int bPower = power[1];
+
+        System.out.println(wPower);
+        System.out.println(bPower);
+
+    }
+    static int[] getPower(String[][] arr){
+        int N = arr.length;
+        int M = arr[0].length;
+
+        int wPower=0;
+        int bPower=0;
+
+        Queue<int[]> queue = new LinkedList<>();
+        boolean[][] visited = new boolean[N][M];
+        int[][] directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+
+        for(int i=0; i<N ; i++) {
+            for(int j=0; j<M; j++){
+                int wBigestPower=0;
+                int bBigestPower=0;
+                if(!visited[i][j]) {
+                    queue.add(new int[]{i, j});
+                    if(arr[i][j].equals("W")) {
+                        wBigestPower +=1;
+                    }else{
+                        bBigestPower +=1;
+                    }
+                    visited[i][j] = true;
                 }
+                while (!queue.isEmpty()) {
+                    int[] cur = queue.poll();
+                    int col = cur[0];
+                    int row = cur[1];
+
+
+                    for (int[] dir : directions) {
+                        int newCol = col + dir[0];
+                        int newRow = row + dir[1];
+
+
+                        if (newCol >= 0 && newCol < N && newRow >= 0 && newRow < M && arr[col][row].equals(arr[newCol][newRow])&& !visited[newCol][newRow]) {
+                            queue.add(new int[]{newCol, newRow});
+                            if(arr[newCol][newRow].equals("W")) {
+                                wBigestPower +=1;
+                            }else{
+                                bBigestPower +=1;
+                            }
+                            visited[newCol][newRow]=true;
+                        }
+                    }
+                }
+                wPower += wBigestPower * wBigestPower;
+                bPower += bBigestPower * bBigestPower;
             }
         }
 
-        int bPower = 0;
-        int wPower = 0;
-        for (int x = 0; x < N; x++) {
-            for (int y = 0; y < M; y++) {
-
-                int count = 1;
-
-                int n1 = x + 1;
-                int n2 = x - 1;
-                int n3 = y + 1;
-                int n4 = y - 1;
-
-                if (n1 > N - 1) n1 = x;
-                if (n2 < 0) n2 = x;
-                if (n3 > M - 1) n3 = y;
-                if (n4 < 0) n4 = y;
-
-
-                if (arr[n1][y] == arr[x][y]) {
-                    count++;
-                    if (n1 == x) count--;
-                }
-
-                if (arr[n2][y] == arr[x][y]) {
-                    count++;
-                    if (n2 == x) count--;
-                }
-
-                if (arr[x][n3] == arr[x][y]) {
-                    count++;
-                    if (n3 == y) count--;
-                }
-
-                if (arr[x][n4] == arr[x][y]) {
-                    count++;
-                    if (n4 == y) count--;
-                }
-
-
-                if (arr[x][y] == 'B') {
-                    bPower += count * count;
-                } else if (arr[x][y] == 'W') {
-                    wPower += count * count;
-                }
-
-
-
-            }
-        }
-
-        System.out.println(wPower + " " + bPower);
-
+        int[] power = new int[]{wPower, bPower};
+        return power;
     }
 }
 
