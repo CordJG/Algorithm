@@ -1,12 +1,13 @@
 package codingTest.silver;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Game1072 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
+        sc.close();
         int n = getWinRate(a ,b);
         System.out.println(n);
 
@@ -14,26 +15,27 @@ public class Game1072 {
     }
 
     static int getWinRate(int gameCount, int winCount){
-        if(gameCount==winCount) return -1;
+
 
         int result1 = (int)Math.floor((double) winCount / gameCount * 100);
-        int result2 ;
+        int result2 =result1;
 
         int n1 = gameCount;
         int n2 = winCount;
 
         int count=0;
-        while(true){
-            count++;
-            n1++;
-            n2++;
-            result2= (int)Math.floor ((double) n2/ n1 *100);
-            if(result2>result1) {
-                break;
+        if(result1<99) {
+            while (result2==result1) {
+                count+=100;
+                n1+=100;
+                n2+=100;
+                result2 = (int) Math.floor((double) n2 / n1 * 100);
+                if(result1!=result2){
+                    return count;
+                }
             }
         }
+        return -1;
 
-
-        return count;
     }
 }
