@@ -18,6 +18,7 @@ public class Bj2606 {
                 nums[i][j] = Integer.parseInt(line[j]);
             }
         }
+        
         int maxNum = findvirus(nums,N);
         System.out.println(maxNum);
     }
