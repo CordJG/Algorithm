@@ -1,4 +1,4 @@
-package codingTest.bronze;
+package codingTest.bronze.빈도수계산;
 
 import java.util.*;
 import java.util.stream.Collectors;
