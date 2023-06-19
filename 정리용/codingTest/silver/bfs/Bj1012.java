@@ -7,6 +7,10 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 먼저 배열에 값들을 넣어주고
+ * 다른 배열을 만들어 값을 넣어줘서 그 배열을 통해 bfs를 이용하면된다.
+ */
 public class Bj1012 {
 
     static int[][] directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
