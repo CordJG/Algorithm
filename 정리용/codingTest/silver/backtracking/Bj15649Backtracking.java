@@ -25,7 +25,7 @@ public class Bj15649Backtracking {
                     System.out.print(num + " ");
                 }
                 System.out.println();
-                return;
+                return;      //다음 for문 되게 return
             }
 
             for (int i = 0; i < N; i++) {
