@@ -1,14 +1,32 @@
 package codingTest.mergeSort;
 
-import java.util.Arrays;
+import java.io.*;
 
 public class MergeSort {
-    public static void main(String[] args) {
-        int[] array = {5, 2, 8, 6, 1, 9, 3, 7, 4};
+    public static void main(String[] args) throws IOException {
 
-        System.out.println("Before sorting : " + Arrays.toString(array));
-        mergeSort(array);
-        System.out.println("After sorting: " + Arrays.toString(array));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        int N = Integer.parseInt(br.readLine());
+
+
+        int[] nums = new int[N];
+
+        for (int i = 0; i < N; i++) {
+            nums[i] = Integer.parseInt(br.readLine());
+        }
+
+        mergeSort(nums);
+
+
+
+        for (int num : nums) {
+            bw.write(num + "\n");
+        }
+
+        bw.flush();
+        bw.close();
+        br.close();
 
     }
 
