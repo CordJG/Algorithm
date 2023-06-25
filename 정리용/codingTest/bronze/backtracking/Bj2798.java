@@ -1,4 +1,4 @@
-package codingTest.silver.backtracking;
+package codingTest.bronze.backtracking;
 
 import java.io.*;
 
