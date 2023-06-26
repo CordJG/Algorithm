@@ -4,7 +4,7 @@ package codingTest.silver.math;
 import java.io.*;
 
 /**
- * 분할 정복을 이용한 거듭제곱... 근데 이해가 안됨
+ * 분할 정복을 이용한 거듭제곱 문제
  */
 
 public class Bj1629 {
@@ -18,7 +18,6 @@ public class Bj1629 {
         long result = pow(A, B, C);
 
         System.out.println(result);
-        System.out.println(1%12);
     }
 
     static long pow(long A, long B, long C) {
