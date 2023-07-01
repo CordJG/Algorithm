@@ -67,7 +67,7 @@ public class MergeSort {
             }
             tempIndex++;
         }
-        // 왼쪽 부분 배열의 나머지 원소를 임시 배열에 복사
+//         왼쪽 부분 배열의 나머지 원소를 임시 배열에 복사
         while (leftStart <= mid) {
             tempArray[tempIndex] = array[leftStart];
             leftStart++;
