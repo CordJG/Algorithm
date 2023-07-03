@@ -2,6 +2,10 @@ package codingTest.mergeSort;
 
 import java.io.*;
 
+/**
+ * 병합정렬
+ */
+
 public class MergeSort {
     public static void main(String[] args) throws IOException {
 
