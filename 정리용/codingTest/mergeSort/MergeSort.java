@@ -3,7 +3,7 @@ package codingTest.mergeSort;
 import java.io.*;
 
 /**
- * 병합정렬
+ * 병합정렬 ver1
  */
 
 public class MergeSort {
