@@ -1,4 +1,4 @@
-package codingTest.silver.sort;
+package codingTest.silver.sort.comparable;
 
 import java.io.*;
 import java.util.*;
