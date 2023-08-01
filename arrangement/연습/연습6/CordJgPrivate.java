@@ -1,5 +1,6 @@
 package 연습.연습6;
-import java.util.random.*;
+
+import java.util.Random.*;
 
 public class CordJgPrivate {
     public static void main(String[] args) {
