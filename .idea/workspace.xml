@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ace3884-b6e3-435b-b918-4d8fe33260f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/arrangement/codingTest/bronze/Bj1037약수.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arrangement/codingTest/bronze/Bj2609최대공최소공.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arrangement/codingTest/bronze/Bj1110.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,18 +36,18 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/user/Desktop/CT/CordStates_",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/CT/CordStates_&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.Bj1152 (1)">
     <configuration name="Bj1085" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../Program Files/Zulu/zulu-11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -191,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690907734456</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="백준 1037,2609">
+      <option name="closed" value="true" />
+      <created>1690911790375</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690911790375</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,7 +216,8 @@
     <MESSAGE value="commit" />
     <MESSAGE value="필요없는 거 삭제" />
     <MESSAGE value="필요없는 거 삭제 및 백준 2530" />
-    <option name="LAST_COMMIT_MESSAGE" value="필요없는 거 삭제 및 백준 2530" />
+    <MESSAGE value="백준 1037,2609" />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 1037,2609" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CordStates_$Bj1085.ic" NAME="Bj1085 Coverage Results" MODIFIED="1690902236693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
