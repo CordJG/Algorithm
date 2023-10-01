@@ -1,4 +1,4 @@
-package codingTest.bronze;
+package codingTest.bronze.기타;
 
 import java.util.*;
 public class Bj1978 {

@@ -1,14 +1,17 @@
-package codingTest.bronze;
+package codingTest.bronze.기타;
 import java.util.*;
-public class Bj10998 {
+public class Bj2475 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] line = sc.nextLine().split(" ");
         int[] nums = new int[line.length];
+        int sum = 0;
         for (int i = 0; i < line.length; i++) {
             nums[i] = Integer.parseInt(line[i]);
         }
-
-        System.out.println(nums[0] * nums[1]);
+        for (int num : nums) {
+            sum += Math.pow(num, 2);
+        }
+        System.out.println(sum % 10);
     }
 }

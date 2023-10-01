@@ -1,4 +1,4 @@
-package codingTest.bronze;
+package codingTest.bronze.기타;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package codingTest.bronze;
+package codingTest.bronze.기타;
 
 
 public class Bj25083 {
