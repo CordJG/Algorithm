@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ace3884-b6e3-435b-b918-4d8fe33260f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/arrangement/codingTest/bronze/기타/Bj10039.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arrangement/codingTest/bronze/기타/Bj3046.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696169110494</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="백준 10039 브론즈 평균점수">
+      <option name="closed" value="true" />
+      <created>1696258789113</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1696258789113</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,7 +282,8 @@
     <MESSAGE value="백준 15552 브론즈" />
     <MESSAGE value="백준 25304 브론즈(영수증문제)" />
     <MESSAGE value="백준 2752 브론즈" />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 2752 브론즈" />
+    <MESSAGE value="백준 10039 브론즈 평균점수" />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 10039 브론즈 평균점수" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CordStates_$Bj1085.ic" NAME="Bj1085 Coverage Results" MODIFIED="1690902236693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
