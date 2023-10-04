@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ace3884-b6e3-435b-b918-4d8fe33260f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/arrangement/codingTest/bronze/기타/Bj3046.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arrangement/codingTest/bronze/기타/Bj5543.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,22 +47,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="Bj1085" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../Program Files/Zulu/zulu-11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="codingTest.bronze.기타.Bj1085" />
-      <module name="CodeStates" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="codingTest.bronze.BufferedReader.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Bj5543">
     <configuration name="Bj10998" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../Program Files/Zulu/zulu-11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -146,20 +132,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Bj5543" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codingTest.bronze.기타.Bj5543" />
+      <module name="CodeStates" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codingTest.bronze.기타.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.Bj5543" />
       <item itemvalue="Application.Bj1152 (1)" />
       <item itemvalue="Application.Bj1152" />
       <item itemvalue="Application.Bj1107" />
       <item itemvalue="Application.Bj10998" />
-      <item itemvalue="Application.Bj1085" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Bj5543" />
         <item itemvalue="Application.Bj1152" />
         <item itemvalue="Application.Bj1152 (1)" />
         <item itemvalue="Application.Bj1107" />
         <item itemvalue="Application.Bj10998" />
-        <item itemvalue="Application.Bj1085" />
       </list>
     </recent_temporary>
   </component>
@@ -258,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696258789113</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="백준 3046 브론즈 수학문제">
+      <option name="closed" value="true" />
+      <created>1696259162399</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1696259162399</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,7 +290,8 @@
     <MESSAGE value="백준 25304 브론즈(영수증문제)" />
     <MESSAGE value="백준 2752 브론즈" />
     <MESSAGE value="백준 10039 브론즈 평균점수" />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 10039 브론즈 평균점수" />
+    <MESSAGE value="백준 3046 브론즈 수학문제" />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 3046 브론즈 수학문제" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CordStates_$Bj1085.ic" NAME="Bj1085 Coverage Results" MODIFIED="1690902236693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
