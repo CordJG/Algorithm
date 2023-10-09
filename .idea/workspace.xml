@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ace3884-b6e3-435b-b918-4d8fe33260f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/arrangement/codingTest/bronze/기타/Bj10101.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arrangement/codingTest/bronze/기타/Bj10156.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -204,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696579835491</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="백준 10101 브론즈 삼각형외우기">
+      <option name="closed" value="true" />
+      <created>1696776632861</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1696776632861</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,7 +241,8 @@
     <MESSAGE value="백준 5543 브론즈 상근날드" />
     <MESSAGE value="백준 5543 브론즈 알파벳 개수" />
     <MESSAGE value="백준 5543 브론즈 10부제" />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 5543 브론즈 10부제" />
+    <MESSAGE value="백준 10101 브론즈 삼각형외우기" />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 10101 브론즈 삼각형외우기" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CordStates_$Bj1085.ic" NAME="Bj1085 Coverage Results" MODIFIED="1690902236693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
